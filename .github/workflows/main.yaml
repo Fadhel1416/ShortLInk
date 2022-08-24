@@ -21,7 +21,7 @@ jobs:
         run: 
           sshpass -e ssh -o stricthostkeychecking=no ${{ secrets.APP_USER }}@${{ secrets.APP_HOST }}
           "cd public_html/ &&
-          git config --local -e &&
+          git checkout HEAD^ file/to/overwrite &&
           git pull &&
           composer update &&
           php bin/console d:s:u --force"
