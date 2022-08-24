@@ -261,3 +261,4 @@
 [2022-08-24T11:32:39.132654+02:00] doctrine.DEBUG: SELECT NON_UNIQUE AS Non_Unique, INDEX_NAME AS Key_name, COLUMN_NAME AS Column_Name, SUB_PART AS Sub_Part, INDEX_TYPE AS Index_Type FROM information_schema.STATISTICS WHERE TABLE_NAME = 'doctrine_migration_versions' AND TABLE_SCHEMA = 'main' ORDER BY SEQ_IN_INDEX ASC [] []
 [2022-08-24T11:32:39.132901+02:00] doctrine.DEBUG: SELECT ENGINE, AUTO_INCREMENT, TABLE_COLLATION, TABLE_COMMENT, CREATE_OPTIONS FROM information_schema.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'doctrine_migration_versions' [] []
 [2022-08-24T11:32:39.133456+02:00] doctrine.DEBUG: SELECT * FROM doctrine_migration_versions [] []
+[2022-08-24T15:17:20.824999+02:00] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_route":"_wdt","_controller":"web_profiler.controller.profiler::toolbarAction","token":"9e8b96"},"request_uri":"http://127.0.0.1:8000/_wdt/9e8b96","method":"GET"} []
