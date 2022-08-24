@@ -20,9 +20,6 @@ jobs:
       - name: deploy change
         run: 
           sshpass -e ssh -o stricthostkeychecking=no ${{ secrets.APP_USER }}@${{ secrets.APP_HOST }}
-          "cd public_html/ &&
-           git config --global user.email "alifadhel619@gmail.com" &&
-           git config --global user.name "alifadhel1996" &&
            git pull  &&
           composer update &&
           php bin/console d:s:u --force"
